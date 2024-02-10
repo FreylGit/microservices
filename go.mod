@@ -1,4 +1,4 @@
-module Weeks
+module github.com/FreylGit/microservices/week_1/grpc
 
 go 1.21
 
