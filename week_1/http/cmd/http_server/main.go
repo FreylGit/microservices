@@ -46,6 +46,7 @@ func createNoteHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to decode note data", http.StatusBadRequest)
 		return
 	}
+
 	rand.Seed(time.Now().UnixNano())
 	now := time.Now()
 
