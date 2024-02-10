@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package note_v1;
+
+option  go_package = "";
