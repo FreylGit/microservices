@@ -13,4 +13,3 @@ COPY --from=builder /github.com/FreylGit/microservices/week_2/grpc/sourse/bin/cr
 
 
 CMD ["./crud_server"]
-CMD ["ls"]
