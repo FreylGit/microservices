@@ -38,7 +38,6 @@ func (s *server) Get(ctx context.Context, req *desc.GetRequest) (*desc.GetRespon
 }
 
 func (s *server) Create(ctx context.Context, req *desc.CreateRequest) (*desc.CreateResponse, error) {
-
 	return &desc.CreateResponse{
 		Id: 123,
 	}, nil
