@@ -24,10 +24,10 @@ generate-note-api:
 build:
 	GOOS=linux GOARCH=amd64 go build -o service_linux cmd/grpc_server/main.go
 
-copy-to-server:
-	scp service_linux root@46.161.52.113:
+copy-to-server:w
+	scp service_linux root@5.159.101.174:
 
 docker-build-and-push:
-	docker buildx build --no-cache --platform linux/amd64 -t cr.selcloud.ru/andrey/test-server:v0.0.1 .
-	docker login -u token -p CRgAAAAAt3NIlZG5YNPzbEgGIm-wFZLR0t4qCdJ- cr.selcloud.ru/andrey
-	docker push cr.selcloud.ru/andrey/test-server:v0.0.1
+	docker buildx build --no-cache --platform linux/amd64 -t cr.selcloud.ru/testregistorty/test-server:v0.0.1 .
+	docker login -u token -p CRgAAAAAJml3il5wT9DRN9jI2eo62f5x-GlytQPQ cr.selcloud.ru/testregistorty
+	docker push cr.selcloud.ru/testregistorty/test-server:v0.0.1

@@ -12,6 +12,5 @@ WORKDIR /root/
 COPY --from=builder /github.com/FreylGit/microservices/week_2/grpc/sourse/bin/crud_server .
 
 
-
 CMD ["./crud_server"]
 CMD ["ls"]
