@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	desc "github.com/FreylGit/microservices/week_1/grpc/week_2/config/pkg/note_v1"
+	desc "github.com/FreylGit/microservices/week_2/grpc/pkg/note_v1"
 	"github.com/brianvoe/gofakeit/v6"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

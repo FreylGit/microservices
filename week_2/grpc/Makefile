@@ -24,7 +24,7 @@ generate-note-api:
 build:
 	GOOS=linux GOARCH=amd64 go build -o service_linux cmd/grpc_server/main.go
 
-copy-to-server:w
+copy-to-server:
 	scp service_linux root@5.159.101.174:
 
 docker-build-and-push:
