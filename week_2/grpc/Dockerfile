@@ -1,4 +1,4 @@
-FROM golang:1.21 AS builder
+FROM golang:1.21.5-alpine AS builder
 
 COPY . /github.com/FreylGit/microservices/week_2/grpc/sourse/
 WORKDIR  /github.com/FreylGit/microservices/week_2/grpc/sourse/
